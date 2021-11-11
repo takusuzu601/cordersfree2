@@ -25,4 +25,10 @@ class Category extends Model
     public function products(){
         return $this->hasManyThrough(Product::class,Subcategory::class);
     }
+
+    // URL AMIGABLES フレンドリーなURLを設定
+    // URL Category->idをSlugに変換
+    public function getRouteKeyName(){
+        return 'slug';
+    }
 }

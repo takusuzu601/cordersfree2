@@ -9,6 +9,10 @@ class Product extends Model
 {
     use HasFactory;
 
+    //status 
+    const BORRADOR=1;
+    const PUBLICADO=2;
+
     protected $guarded=['id','created_at','updated_at'];
 
     //リレーション一対多
@@ -27,11 +31,17 @@ class Product extends Model
 
     //リレーション　多対多
     public function colors(){
-        return $this->hasMany(Color::class);
+        return $this->belongsToMany(Color::class);
     }
 
     //リレーション　一対多のポリモーフィック
     public function images(){
         return $this->morphMany(Image::class,"imageable");
+    }
+
+     // URL AMIGABLES フレンドリーなURLを設定
+    // URL Product->idをSlugに変換
+    public function getRouteKeyName(){
+        return 'slug';
     }
 }

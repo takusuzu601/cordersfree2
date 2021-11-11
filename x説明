@@ -1,1 +1,26 @@
+code git hub https://github.com/coders-free/ecommerce
+
+laravel jetstream インストール php artisan vendor:publish --tag=jetstream-views
+
+tailwind component starter-kit https://tailwind-starter-kit.vercel.app/
+
+各種CDN プラグイン 検索サイト https://cdnjs.com/
+
+スライダー Glinder js https://cdnjs.com/libraries/glider-js
+
+スライダー FlexSlider2 http://flexslider.woothemes.com/
+
+日付ライブラリー jenssegers/date https://github.com/jenssegers/date
+
 session2 xamppを使って編集する為の初期設定config&system32/driver/host編集
+
+session 8~14 detabase テーブル設定やseeder fackerの設定 
+section 9    tailwind css セッティング
+
+section 21~29 tailwindとalpaine jsを使ったハンバーガーメニューやtailwindcssやlpine jsを使ったレスポンシブ化
+
+section30~33 スライダーの設置 Glinder.jsと表示方法
+section37 URL Category->idをSlugに変換
+
+section39~40 ☆☆☆絞り込み検索☆☆☆絞り込み検索 重要 ☆☆☆絞り込み検索☆☆☆ ☆☆☆絞り込み検索☆☆☆ ☆☆☆絞り込み検索☆☆☆
+section 41~42 レスポンシブ化

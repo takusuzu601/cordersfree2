@@ -43,7 +43,8 @@ return [
 
     'features' => [
         // Features::termsAndPrivacyPolicy(),
-        // Features::profilePhotos(),
+        //下記　プロファイル写真設定　オンオフ
+         Features::profilePhotos(),
         // Features::api(),
         // Features::teams(['invitations' => true]),
         Features::accountDeletion(),

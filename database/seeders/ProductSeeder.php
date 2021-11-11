@@ -2,6 +2,8 @@
 
 namespace Database\Seeders;
 
+use App\Models\Image;
+use App\Models\Product;
 use Illuminate\Database\Seeder;
 
 class ProductSeeder extends Seeder
@@ -13,6 +15,12 @@ class ProductSeeder extends Seeder
      */
     public function run()
     {
-        //
+        Product::factory(250)->create()->each(function(Product $product){
+            //Productのダミー画像を挿入
+            Image::factory(4)->create([
+                'imageable_id'=>$product->id,
+                'imageable_type'=>Product::class
+            ]);
+        });
     }
 }
