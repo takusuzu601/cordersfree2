@@ -6,3 +6,5 @@
 @import 'container.css';
 /* Navigation 開閉ボタンCSS */
 @import 'nav.css';
+
+@import 'form.css'

@@ -43,6 +43,7 @@
                     @livewire('add-cart-item-size',['product'=>$product])
 
                 @elseif($product->subcategory->color)
+                
                     @livewire('add-cart-item-color',['product'=>$product])
 
                 @else 

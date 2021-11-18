@@ -17,6 +17,6 @@ class Size extends Model
     }
     //リレーション多対多
     public function colors(){
-        return $this->belongsToMany(Color::class);
+        return $this->belongsToMany(Color::class)->withPivot('quantity');
     }
 }
