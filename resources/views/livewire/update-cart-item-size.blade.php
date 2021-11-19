@@ -3,7 +3,7 @@
         wire:target="decrement" wire:click="decrement">
         -
     </x-jet-secondary-button>
-    <span class="mx-2 text-gray-700">1</span>
+    <span class="mx-2 text-gray-700">{{$qty}}</span>
     <x-jet-secondary-button disabled {{-- disabledにqtyが一以下の場合trueが入る --}} x-bind:disabled="$wire.qty >= $wire.quantity"
         wire:loading.attr="disabled" wire:target="increment" wire:click="increment">
         +
