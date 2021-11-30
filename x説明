@@ -1,3 +1,7 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+各種使用プラグインや参考ページ
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 code git hub https://github.com/coders-free/ecommerce
 
 laravel jetstream インストール php artisan vendor:publish --tag=jetstream-views
@@ -12,23 +16,44 @@ tailwind component starter-kit https://tailwind-starter-kit.vercel.app/
 
 日付ライブラリー jenssegers/date https://github.com/jenssegers/date
 
+ショッピングカートライブラリー bumbummen99 https://packagist.org/packages/bumbummen99/shoppingcart
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+SECTION 説明
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 session2 xamppを使って編集する為の初期設定config&system32/driver/host編集
 
 session 8~14 detabase テーブル設定やseeder fackerの設定 
+
 section 9    tailwind css セッティング
 
 section 21~29 tailwindとalpaine jsを使ったハンバーガーメニューやtailwindcssやlpine jsを使ったレスポンシブ化
 
 section30~33 スライダーの設置 Glinder.jsと表示方法
+
 section37 URL Category->idをSlugに変換
 
 section39~40 ☆☆☆絞り込み検索☆☆☆絞り込み検索 重要 ☆☆☆絞り込み検索☆☆☆ ☆☆☆絞り込み検索☆☆☆ ☆☆☆絞り込み検索☆☆☆
+
 section 41~42 レスポンシブ化
 
 section55~61 ショッピングカートの中身の表示と構造
 
 section62 ヘルパーの説明と構築方法 設定方法
+
 section63 ヘルパーをComposerに登録し使用できるようにする
+
 section64~66 カート内と実際の数量を加減を表示計算する方法 難易度が高い
 
 section 67~71 検索ボックスの検索候補と検索結果ページの作り方
+
+section 83 イベントリスナーを追加方法(ログイン ログアウト時) Provider/EventServoceProviderに登録後php artisan event:generateでListenersフォルダにリスナーが登録される
+
+section85 ログアウト後再度ログイン時カートの値を保持する方法。Listener(リスナー)を設定
+
+section89 リレーション関係の3テーブルのダミーデーター挿入のSEEDERの書き方
+
+section92 Alpine Jsで要素の表示非表示 
+
+section111 アクセスポリシーの作成とmiddleware('auth')->group()の設定

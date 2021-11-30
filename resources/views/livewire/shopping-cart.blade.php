@@ -101,7 +101,7 @@
                     </p>
                 </div>
                 <div>
-                    <x-button-enlace>
+                    <x-button-enlace href="{{route('orders.create')}}">
                         決済画面へ
                     </x-button-enlace>
                 </div>
