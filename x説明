@@ -57,3 +57,7 @@ section89 リレーション関係の3テーブルのダミーデーター挿入
 section92 Alpine Jsで要素の表示非表示 
 
 section111 アクセスポリシーの作成とmiddleware('auth')->group()の設定
+
+section115 URLパラメーターで高度なページの表示と要素の変更
+
+session116 保留中の注文をsession.flashを使い件数表示する方法 リンクバナーもフラッシュメッセージに含める

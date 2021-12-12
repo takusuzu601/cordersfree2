@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Category;
+use App\Models\Order;
 use Illuminate\Http\Request;
 
 class WelcomeController extends Controller
@@ -11,9 +12,18 @@ class WelcomeController extends Controller
 
     public function __invoke()
     {
+       if(auth()->user()){
+        $pendient = Order::where('status', 1)->where('user_id', auth()->user()->id)->count();
 
-        $categories=Category::all();
+        if ($pendient) {
 
-        return view('welcome',compact('categories'));
+            $mensaje="現在 $pendient 件の保留中の注文があります . <a class='font-bold' href='".route('orders.index')."?status=1'> コチラ </a>";
+            session()->flash('flash.banner', $mensaje);
+        }
+       }
+
+        $categories = Category::all();
+
+        return view('welcome', compact('categories'));
     }
 }
